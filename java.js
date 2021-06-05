@@ -38,16 +38,19 @@ window.addEventListener("scroll", function () {
 // Hamburger function
 const hamburger = document.querySelector(".nav-button");
 const navMenu = document.querySelector(".mobile-navigation");
+const home = document.querySelector("#main-content");
 hamburger.addEventListener("click", openNav);
 function openNav() {
 	hamburger.classList.toggle("active");
 	navMenu.classList.toggle("active");
+	home.classList.toggle("active");
 }
 const navLink = document.querySelectorAll(".mobile-link");
 navLink.forEach((n) => n.addEventListener("click", closeNav));
 function closeNav() {
 	hamburger.classList.remove("active");
 	navMenu.classList.remove("active");
+	home.classList.remove("active");
 }
 
 

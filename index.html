@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Web development and Web design portfolio of Front end web developer Jarol Riera. Services in Virginia, Maryland, Washington DC and Nationwide" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
         <title>Jarol Riera Web Development Portfolio</title>
         <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png" >
         <link rel="stylesheet" href="style.css">
@@ -12,9 +13,7 @@
         
     </head>
     <body>
-
         <nav id="navBar">
-                
                     <!--DESKTOP NAVBAR-->
 
                     <div class="desktop-nav">
@@ -41,6 +40,7 @@
         </nav>
 
     <!--WELCOME SECTION-->
+    <div id="main-content">
         <section id="welcome-section">
              <header>
                 <h1>JOHN DOE</h1>
@@ -71,7 +71,7 @@
 <section id="projects">
                 <h2 >MY WORK</h2>
                 <div class="projects-container">
-                    <div class="project-box tile1 lazy">
+                    <div class="project-box tile1 lazy" onmouseover="labelShow2();" onmouseout="labelHide2();">
                         <p class="project-label label1">Project 1 <i class="far fa-folder-open"></i></p>
                     </div>
                     <div class="project-box tile2 lazy" onmouseover="labelShow2();" onmouseout="labelHide2();">
@@ -184,7 +184,7 @@
              <p class="top-button"><a href="#"><i class="fas fa-chevron-up"></i><br> TOP</p></a>
             <p class="copyright">&copy;2021 by Jarol Riera. All rights reserved</p>  
         </footer>
-
+        </div>
     <!--SCRIPTS-->
         <script src="java.js"></script>
         <script src="zenscroll-min.js"></script>
