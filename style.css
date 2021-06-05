@@ -79,7 +79,7 @@ h2 {
 #welcome-section {
     background: linear-gradient(
         rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.8)) , url(Images/pexels-stefan-stefancik-91224.jpg) center center no-repeat fixed;
+        rgba(0, 0, 0, 0.8)) , url(Images/pexels-stefan-stefancik-91224-min.webp) center center no-repeat fixed;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -196,32 +196,32 @@ h2 {
 }
 .tile1 {
     grid-area: box1;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-zachary-debottis-1888883.jpg) no-repeat center top;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-zachary-debottis-1888883-min.webp) no-repeat center top;
     background-size: 100%;
 }
 .tile2 {
     grid-area: box2;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-akwice-3094799.jpg) no-repeat center top;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-akwice-3094799-min.webp) no-repeat center top;
     background-size: 100%;
 }
 .tile3 {
     grid-area: box3;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-dids-3045825.jpg) no-repeat center top;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-dids-3045825-min.webp) no-repeat center top;
     background-size: 100%;
 }
 .tile4 {
     grid-area: box4;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-kaboompics-com-5836.jpg) no-repeat center top;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-kaboompics-com-5836-min.webp) no-repeat center top;
     background-size: 100%;
 }
 .tile5 {
     grid-area: box5;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-mohamed-abdelsadig-3374938.jpg) no-repeat center bottom;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-mohamed-abdelsadig-3374938-min.webp) no-repeat center bottom;
     background-size: 100%;
 }
 .tile6 {
     grid-area: box6;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-kei-scampa-3303491.jpg) no-repeat center top;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-kei-scampa-3303491-min.webp) no-repeat center top;
     background-size: 100%;
 }
 .far {
@@ -287,9 +287,10 @@ h2 {
   background-color: #fd0e3a;
 }
 
-.circle-wrap .circle .mask.full,
-.circle-wrap .circle .fill-1 {
+.circle-wrap .circle .mask.full.range-active,
+.circle-wrap .circle .fill-1.skill-active {
   animation: fill-1 ease-in-out 3s;
+
   transform: rotate(181deg);
 }
 
@@ -301,8 +302,8 @@ h2 {
     transform: rotate(181deg);
   }
 }
-.circle-wrap .circle .mask.full,
-.circle-wrap .circle .fill-2 {
+.circle-wrap .circle .mask.full.range-active,
+.circle-wrap .circle .fill-2.skill-active {
   animation: fill-2 ease-in-out 3s;
   transform: rotate(160deg);
 }
@@ -315,8 +316,8 @@ h2 {
     transform: rotate(160deg);
   }
 }
-.circle-wrap .circle .mask.full,
-.circle-wrap .circle .fill-3 {
+.circle-wrap .circle .mask.full.range-active,
+.circle-wrap .circle .fill-3.skill-active {
   animation: fill-3 ease-in-out 3s;
   transform: rotate(126deg);
 }
@@ -354,13 +355,13 @@ h2 {
     margin: 5% auto 0% 8%;
     float: left;
     font-size: 1.30em;
-    text-align: justify;
     line-height: 1.50;
     color: rgb(161, 161, 161);
 }
 #about > h2 {
     margin: 15% auto 0% 8%;
     font-size: 2em;
+    text-align: left;
 }
 .img-container {
     width: 25%;
@@ -402,9 +403,11 @@ h2 {
     width: 100%;
     margin: 7% auto 0% auto;
     color: rgb(161, 161, 161);
+    display: flex;
+    justify-content: center;
 }
 .contact-info > p {
-    width: 32.50%;
+    width: 100%;
     display: inline-block;
     margin: auto;
     text-align: center;
@@ -680,6 +683,61 @@ h2, #div-title {
     margin-top: 5%;
     padding: 5em;
 }
+#skill-section.div-active-mobile {
+    transition: animation ease-in-out 0.70s;
+    animation: parallax ease;
+    animation-duration: 1.50s;
+    animation-fill-mode: forwards;
+}
+@keyframes parallax {
+    from{ margin-top: -11%; opacity: 0;}
+    top{
+        margin-top: 8%; opacity: 1;
+    }
+}
+.circle-wrap .circle .mask.full.range-active-mobile,
+.circle-wrap .circle .fill-1.skill-active-mobile {
+  animation: fill-1 ease-in-out 3s;
+
+  transform: rotate(181deg);
+}
+
+@keyframes fill-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(181deg);
+  }
+}
+.circle-wrap .circle .mask.full.range-active-mobile,
+.circle-wrap .circle .fill-2.skill-active-mobile {
+  animation: fill-2 ease-in-out 3s;
+  transform: rotate(160deg);
+}
+
+@keyframes fill-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(160deg);
+  }
+}
+.circle-wrap .circle .mask.full.range-active-mobile,
+.circle-wrap .circle .fill-3.skill-active-mobile {
+  animation: fill-3 ease-in-out 3s;
+  transform: rotate(126deg);
+}
+
+@keyframes fill-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(126deg);
+  }
+}
 #about {
     height: auto;
     width: 100%;
@@ -719,6 +777,7 @@ h2, #div-title {
     width: 80%;
     margin: 13% auto 15% auto;
     color: rgb(161, 161, 161);
+    display: block;
 }
 .contact-info > p {
     width: 100%;
