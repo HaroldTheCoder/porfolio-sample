@@ -501,9 +501,6 @@ h2 {
 }
 /* Iphone 12*/ 
 @media only screen and (min-width:390px) and (max-width: 844px) {
-    body {
-        margin-top: 13%;
-    }
     #welcome-section {
     background: linear-gradient(
         rgba(0, 0, 0, 0.7),
@@ -753,6 +750,7 @@ h2, #div-title {
     margin: auto;
 }
 .about-paragraph {
+    position: relative;
     width: 80%;
     margin: 5% auto 0% auto;
     float: none;
@@ -761,7 +759,12 @@ h2, #div-title {
     font-size: 1em;
     color: rgb(161, 161, 161);
 }
-
+.social-links {
+    position: absolute;
+    bottom: -115%;
+    left:0;
+    width: 100%;
+}
 .img-container {
     width: 50%;
     float: none;
@@ -784,7 +787,7 @@ h2, #div-title {
 }
 
 .contact-info {
-    width: 80%;
+    width: 100%;
     margin: 13% auto 15% auto;
     color: rgb(161, 161, 161);
     display: block;
