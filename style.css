@@ -589,7 +589,6 @@ h2, #div-title {
     }
     .mobile-navigation.active {
         display: block;
-        vertical-align: middle;
 	   animation: appear2 0.55s ease-in-out;
     animation-fill-mode: forwards;
     z-index: 1000;

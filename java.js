@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
 // Button function
 window.addEventListener("scroll", function () {
 	var topButton = document.querySelector(".top-button");
-	topButton.classList.toggle("button-active", window.scrollY > 3500);
+	topButton.classList.toggle("button-active", window.scrollY > 4200);
 
 });
 
@@ -20,9 +20,9 @@ window.addEventListener("scroll", function () {
 	var diV = document.querySelector("#skill-section");
 	var range = document.querySelectorAll(".fill");
 	var full = document.querySelectorAll(".full");
-	diV.classList.toggle("div-active", window.scrollY > 2100);
-	range.forEach((m) => m.classList.toggle("skill-active", window.scrollY > 2300));
-	full.forEach((n) => n.classList.toggle("range-active", window.scrollY > 2300)
+	diV.classList.toggle("div-active", window.scrollY > 2300);
+	range.forEach((m) => m.classList.toggle("skill-active", window.scrollY > 2400));
+	full.forEach((n) => n.classList.toggle("range-active", window.scrollY > 2400)
 	);
 });
 // Skill-Div Parallax Mobile function 
