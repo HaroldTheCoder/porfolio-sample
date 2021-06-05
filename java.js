@@ -29,7 +29,7 @@ function openNav() {
 	hamburger.classList.toggle("active");
 	navMenu.classList.toggle("active");
 }
-const navLink = document.querySelectorAll(".nav-link");
+const navLink = document.querySelectorAll(".mobile-link");
 navLink.forEach((n) => n.addEventListener("click", closeNav));
 function closeNav() {
 	hamburger.classList.remove("active");
