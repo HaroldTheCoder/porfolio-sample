@@ -234,7 +234,7 @@ h2 {
 #skill-section.div-active {
     transition: animation ease-in-out 0.70s;
     animation: parallax ease;
-    animation-duration: 1.50s;
+    animation-duration: 1.55s;
     animation-fill-mode: forwards;
 }
 @keyframes parallax {
@@ -263,7 +263,7 @@ h2 {
 .circle-wrap {
  float: left;
  position: relative;
-  margin: 10% auto;
+  margin: 20% auto;
   width: 150px;
   height: 150px;
   background: #2c2c2c;
@@ -501,6 +501,9 @@ h2 {
 }
 /* Iphone 12*/ 
 @media only screen and (min-width:390px) and (max-width: 844px) {
+    body {
+        margin-top: 13%;
+    }
     #welcome-section {
     background: linear-gradient(
         rgba(0, 0, 0, 0.7),
@@ -623,6 +626,9 @@ h2, #div-title {
    height: 0.20em;
    margin: 4% auto auto auto;
 } 
+#services {
+    margin-top: 20%;
+}
 .services-tile {
     width: 100%;
     margin: 5% auto auto auto;
@@ -686,11 +692,11 @@ h2, #div-title {
 #skill-section.div-active-mobile {
     transition: animation ease-in-out 0.70s;
     animation: parallax ease;
-    animation-duration: 1.50s;
+    animation-duration: 1.70s;
     animation-fill-mode: forwards;
 }
 @keyframes parallax {
-    from{ margin-top: -11%; opacity: 0;}
+    from{ margin-top: -12%; opacity: 0;}
     top{
         margin-top: 8%; opacity: 1;
     }
@@ -742,6 +748,10 @@ h2, #div-title {
     height: auto;
     width: 100%;
 }
+#about h2 {
+    text-align: center;
+    margin: auto;
+}
 .about-paragraph {
     width: 80%;
     margin: 5% auto 0% auto;
@@ -790,7 +800,7 @@ h2, #div-title {
 }
 
 .contact-message {
-    width: 75%;
+    width: 93%;
 }
 .form-input {
     width: 100%;
@@ -822,5 +832,8 @@ h2, #div-title {
     bottom: 1.50vh;
     padding: 0.70em;
     width: 17.50%;
+}
+.top-button.button-active-mobile {
+    opacity: 1;
 }
 }
