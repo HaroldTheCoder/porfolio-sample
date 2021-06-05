@@ -749,6 +749,7 @@ h2, #div-title {
 #about {
     height: auto;
     width: 100%;
+    padding: 2.50em 1em 2em 1em;
 }
 #about h2 {
     text-align: center;
@@ -766,7 +767,7 @@ h2, #div-title {
 }
 .social-links {
     position: absolute;
-    bottom: -135%;
+    bottom: -150%;
     left:0;
     width: 100%;
 }
