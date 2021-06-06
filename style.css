@@ -94,6 +94,8 @@ h2 {
 #welcome-section header  {
     color: rgb(255, 255, 255); 
     text-align: center;
+    border: 4px solid #fd0e3a4d;
+    padding: 3em;
     margin: auto;
 }
 
@@ -202,32 +204,32 @@ h2 {
 }
 .tile1 {
     grid-area: box1;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-zachary-debottis-1888883-min.webp) no-repeat center top;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/company-desk-min\ .jpeg) no-repeat center top;
     background-size: 100%;
 }
 .tile2 {
     grid-area: box2;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-akwice-3094799-min.webp) no-repeat center top;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/restaurant-desk-min.jpeg) no-repeat center top;
     background-size: 100%;
 }
 .tile3 {
     grid-area: box3;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-dids-3045825-min.webp) no-repeat center top;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/portfolio-desk.jpeg) no-repeat center top;
     background-size: 100%;
 }
 .tile4 {
     grid-area: box4;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-kaboompics-com-5836-min.webp) no-repeat center top;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/Web\ capture_6-6-2021_181736_haroldthecoder.github.io.jpeg) no-repeat center top;
     background-size: 100%;
 }
 .tile5 {
     grid-area: box5;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-mohamed-abdelsadig-3374938-min.webp) no-repeat center bottom;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/Web\ capture_6-6-2021_181811_haroldthecoder.github.io.jpeg) no-repeat center top;
     background-size: 100%;
 }
 .tile6 {
     grid-area: box6;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/pexels-kei-scampa-3303491-min.webp) no-repeat center top;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/Blogr-desk-min.jpeg) no-repeat center top;
     background-size: 100%;
 }
 .far {
@@ -511,12 +513,18 @@ h2 {
 @media only screen and (min-width:390px) and (max-width: 844px) {
     #welcome-section {
     background: linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.8)) , url(Images/1630410.jpg) center center no-repeat;
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.7)) , url(Images/1630410.jpg) center center no-repeat;
     background-size: cover;
     width: 100%;
     height: 95vh;
     }
+    #welcome-section header  {
+
+
+    padding: 1em;
+}
+
     h1 {
     font-size: 2.05em;
 }
