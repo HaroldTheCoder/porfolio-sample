@@ -5,7 +5,7 @@ body {
     margin: 0%;
     font-family:'Montserrat', sans-serif, monospace;
     letter-spacing: 1.50px;
-    background-color: #000000;
+    background-color: #181818;
     color: rgb(219, 219, 219);
     
 }
@@ -81,8 +81,8 @@ h2 {
 /* WELCOME STYLE */
 #welcome-section {
     background: linear-gradient(
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.8)) , url(Images/1630410.jpg) center center no-repeat fixed;
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.8)) , url(Images/pexels-stefan-stefancik-91224-min.webp) center center no-repeat fixed;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -137,7 +137,7 @@ h2 {
     padding-left: 2em;
 }
 .fa-laptop-code, .fa-mountain,
-.fa-shopify, .fa-fire {
+.fa-shopify, .fa-tachometer-alt {
     font-size: 3em;
     padding: 1em 0 0 0.85em;
     color: #fd0e3a;
@@ -370,14 +370,12 @@ h2 {
     width: 25%;
     float: right;
     opacity: 0.7;
-    margin: 0% 8% 0% auto;
+    margin: -10% 8% 0% auto;
 }
 .profile-img {
     width: 100%;
     height: auto;
-    border-radius: 50%;
     margin: auto;
-    opacity: 0.9;
 }
 .fa {
     font-size: 1em;
@@ -509,7 +507,7 @@ h2 {
     #welcome-section {
     background: linear-gradient(
         rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.8)) , url(Images/1630410.jpg) center center no-repeat;
+        rgba(0, 0, 0, 0.8)) , url(Images/pexels-stefan-stefancik-91224.jpg) center center no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -579,7 +577,7 @@ h2, #div-title {
 }
 
 #main-content.active {
-        opacity: 0.6;
+        opacity: 0.3;
     }
  .bar, .bar, .bar {
         width: 2em;
@@ -633,19 +631,6 @@ h2, #div-title {
 #services {
     margin-top: 20%;
 }
-.fa-shopify, .fa-fire {
-    text-align: center;
-    padding-left: 0em;
-    margin-left: 43%;
-}
-.fa-laptop-code, .fa-mountain {
-    text-align: center;
-    padding-left: 0em;
-    margin-left: 41%;
-}
-.services-title {
-    text-align: center;
-    padding-left: 0 }
 .services-tile {
     width: 100%;
     margin: 5% auto auto auto;
@@ -764,7 +749,7 @@ h2, #div-title {
 #about {
     height: auto;
     width: 100%;
-    padding: 2.50em 1em 3.50em 1em;
+    padding: 2.50em 1em 2em 1em;
 }
 #about h2 {
     text-align: center;
@@ -782,7 +767,7 @@ h2, #div-title {
 }
 .social-links {
     position: absolute;
-    bottom: -130%;
+    bottom: -150%;
     left:0;
     width: 100%;
 }
@@ -790,7 +775,7 @@ h2, #div-title {
     width: 50%;
     float: none;
     opacity: 0.7;
-    margin: 15% auto auto auto;
+    margin: auto;
 }
 .profile-img {
     width: 100%;
