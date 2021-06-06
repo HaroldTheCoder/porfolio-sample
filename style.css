@@ -36,6 +36,7 @@ h2 {
     transition: background-color ease 0.50s, padding ease 0.50s;
 }
 #navBar.active {
+    transition: background-color ease 0.80s;
     background-color: rgb(255, 255, 255);
     position: fixed;
     padding: 1em 1em 0.70em 1em;
@@ -166,6 +167,7 @@ h2 {
     height: auto;
     margin: auto;
 }
+
 .project-box {
     border-radius: 0.10rem;
     text-align: center;
@@ -176,6 +178,7 @@ h2 {
     overflow: hidden;
     cursor: pointer;
 }
+
 .project-label {
     position: relative;
     top: 0;
@@ -535,19 +538,19 @@ h2, #div-title {
     width: 25%;
 }
 #navBar.active {
-    background-color: #030303;
+    background-color: #0c0c0c;
     position: fixed;
     padding: 1em 1em 2em 1em;
 }
 .bar, .bar, .bar.mobile-active {
-    background-color: #fd0e3a;
+    background-color: rgb(211, 211, 211);
 }
 .nav-link.link-active:hover {
     color: rgb(0, 0, 0);
 }
 .mobile-link {
      text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(211, 211, 211);
     padding: 0 1em 0 1em;
 }
 .mobile-link:hover {
@@ -575,7 +578,7 @@ h2, #div-title {
     padding-top: 8em;
     text-align: left;
     transition: ease 0.50s;
-    background-color: #ffffff;
+    background-color: #0c0c0c;
 }
 
 #main-content.active {
@@ -584,7 +587,7 @@ h2, #div-title {
  .bar, .bar, .bar {
         width: 2em;
         height: 0.12em;
-        background-color: #fd0e3a;
+        background-color: rgb(211, 211, 211);
         margin: 6px 0;
         transition: 0.3s;
         border-radius: 1em;
