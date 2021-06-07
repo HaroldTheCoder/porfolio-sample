@@ -664,7 +664,7 @@ h2, #div-title {
 		display: none;
 	}
 #navbar-container.nav-active {
-    background-color: rgb(29, 29, 29);
+    background-color: black;
     position: fixed;
     top: 0;
     color: white;
