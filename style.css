@@ -117,7 +117,7 @@ animation: size;
     top: 83%;
     left: 46.50%;
     font-size: 2em;;
-    animation: start 2s ease ;
+    animation: start 2s ease 0.50s;
     border-bottom: 3px solid #fd0e3a;
    
 }
