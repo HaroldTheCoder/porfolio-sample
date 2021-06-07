@@ -68,6 +68,12 @@ h2 {
 }
 .nav-link:target .link-container hr{
     opacity: 1;
+animation: size;
+   animation-duration: 0.60s;
+} 
+@keyframes size {
+    from{width:5%;}
+    to{width:40%;}
 }
 .link-container hr{
    width: 40%;
