@@ -117,17 +117,20 @@ animation: size;
     top: 83%;
     left: 46.50%;
     font-size: 2em;;
-    animation: start 2s ease 0.50s;
+    animation: start 3s linear 0.90s;
     border-bottom: 3px solid #fd0e3a;
    
 }
 @keyframes start {
     0%{
         top: 83%;
-        opacity: 0.1;
     }
-    50% {
+    30% {
         top: 82%;
+    }
+
+    60% {
+        top: 84%;
     }
     100% {
         top: 83%;
@@ -582,7 +585,7 @@ h2, #div-title {
     width: 25%;
 }
 #navBar.active {
-    background-color: #0c0c0c;
+    background-color: #000000c5;
     position: fixed;
     padding: 1em 1em 2em 1em;
 }
@@ -621,8 +624,8 @@ h2, #div-title {
     margin: 5% auto;
     padding-top: 8em;
     text-align: left;
-    transition: ease-out 0.70s;
-    background-color: black;
+    transition: ease 0.50s;
+    background-color: #0c0c0c;
 }
 
 #main-content.active {
@@ -664,7 +667,7 @@ h2, #div-title {
 		display: none;
 	}
 #navbar-container.nav-active {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.562);
     position: fixed;
     top: 0;
     color: white;
