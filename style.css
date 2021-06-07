@@ -621,8 +621,8 @@ h2, #div-title {
     margin: 5% auto;
     padding-top: 8em;
     text-align: left;
-    transition: ease-out 0.50s;
-    background-color: #black;
+    transition: ease-out 0.70s;
+    background-color: black;
 }
 
 #main-content.active {
