@@ -239,7 +239,7 @@ animation: size;
 }
 .tile6 {
     grid-area: box6;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/illustration-phones.svg) no-repeat left top;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/Blogr-desk-min-2.jpeg) no-repeat center center;
     background-size: cover;
 }
 .far {
@@ -565,7 +565,6 @@ h2, #div-title {
     color: rgb(211, 211, 211);
     padding: 0 1em 0 1em;
 }
-
 .mobile-link:hover {
     font-weight: 600;
 }
@@ -691,6 +690,12 @@ h2, #div-title {
 }
 .tile5 {
     background-position: left top;
+}
+.tile6 {
+    background-position: top center;
+}
+.tile1 {
+    background-position: top left;
 }
 .projects-container {
     display: grid;
