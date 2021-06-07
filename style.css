@@ -64,7 +64,13 @@ h2 {
     display: inline-block;
 }
 .link-container:hover hr{
-    opacity: 1;
+     opacity: 1;
+animation: size;
+   animation-duration: 0.60s;
+} 
+@keyframes size {
+    from{width:5%;}
+    to{width:40%;}
 }
 .nav-link:target .link-container hr{
     opacity: 1;
