@@ -565,9 +565,7 @@ h2, #div-title {
     color: rgb(211, 211, 211);
     padding: 0 1em 0 1em;
 }
-.link-container:nth-child(1) {
-    margin-top: 20%;
-}
+
 .mobile-link:hover {
     font-weight: 600;
 }
