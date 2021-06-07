@@ -763,7 +763,6 @@ h2, #div-title {
     grid-template-areas: "circle-1"
                          "circle-2" 
                          "circle-3";
-    background-color: #26252e6c;
     margin-top: 5%;
     padding: 5em;
 }
