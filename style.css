@@ -64,7 +64,7 @@ h2 {
     display: inline-block;
 }
 .link-container:hover hr{
-     opacity: 1;
+   opacity: 1;
 animation: size;
    animation-duration: 0.60s;
 } 
@@ -184,8 +184,8 @@ animation: size;
     border-radius: 0.10rem;
     text-align: center;
     width: 100%;
-    height: 18em;
-    max-height: 18em;
+    height: 28vh;
+    max-height: 28vh;
     opacity: 0.9;
     overflow: hidden;
     cursor: pointer;
@@ -214,33 +214,33 @@ animation: size;
 }
 .tile1 {
     grid-area: box1;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/company-desk-min\ .jpeg) no-repeat center top;
-    background-size: 100%;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/company-desk-min\ -2.jpeg) no-repeat center right;
+    background-size: cover;
 }
 .tile2 {
     grid-area: box2;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/restaurant-desk-min.jpeg) no-repeat center top;
-    background-size: 100%;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/restaurant-desk-min-2.jpeg) no-repeat center top;
+    background-size: cover;
 }
 .tile3 {
     grid-area: box3;
     background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/portfolio-desk.jpeg) no-repeat center top;
-    background-size: 100%;
+    background-size: cover;
 }
 .tile4 {
     grid-area: box4;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/Web\ capture_6-6-2021_181736_haroldthecoder.github.io.jpeg) no-repeat center top;
-    background-size: 100%;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/Web\ capture_6-6-2021_181736_haroldthecoder.github.io-2.jpeg) no-repeat  left top;
+    background-size: cover;
 }
 .tile5 {
     grid-area: box5;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/Web\ capture_6-6-2021_181811_haroldthecoder.github.io.jpeg) no-repeat center top;
-    background-size: 100%;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/Web\ capture_6-6-2021_181811_haroldthecoder.github.io-2.jpeg) no-repeat left top;
+    background-size: cover;
 }
 .tile6 {
     grid-area: box6;
-    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/Blogr-desk-min.jpeg) no-repeat center top;
-    background-size: 100%;
+    background: linear-gradient(rgba(7, 7, 7, 0.1), rgba(16, 14, 37, 0.1)), url(Images/illustration-phones.svg) no-repeat left top;
+    background-size: cover;
 }
 .far {
     padding-left: 0.50em;
@@ -477,7 +477,6 @@ animation: size;
 
 /* FOOTER STYLE */
 #main-footer {
-    background-color: black;
     margin-top: 5%;
     padding: 1em;
     position: relative;
@@ -547,9 +546,6 @@ h2, #div-title {
 .link-container:hover .mobile-link{
     font-weight: 600;
 }
-.link-container:nth-child(1) {
-    margin-top: 20%;
-}
 .link-container hr {
     width: 25%;
 }
@@ -568,6 +564,9 @@ h2, #div-title {
      text-decoration: none;
     color: rgb(211, 211, 211);
     padding: 0 1em 0 1em;
+}
+.link-container:nth-child(1) {
+    margin-top: 20%;
 }
 .mobile-link:hover {
     font-weight: 600;
@@ -676,6 +675,7 @@ h2, #div-title {
     max-height: fit-content;
     margin: 10% auto;
     text-align: left; 
+
 }
 #projects {
     text-align: center;
@@ -689,6 +689,10 @@ h2, #div-title {
 }
 .project-box {
     margin-top: 5%;
+    background-position: center center;
+}
+.tile5 {
+    background-position: left top;
 }
 .projects-container {
     display: grid;
