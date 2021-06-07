@@ -110,14 +110,15 @@ animation: size;
 }
 .start-button .far {
     color: rgb(255, 255, 255);
-    padding-right: 0.50em;
+    padding: 0 0 0 0.70em ;
 }
 .start-button {
     position: absolute;
+    text-decoration: none;
     top: 83%;
-    left: 46.50%;
+    left: 46%;
     font-size: 2em;;
-    animation: start 2s linear 0.90s;
+    animation: start 3s ease 0.90s;
     border-bottom: 3px solid #fd0e3a;
    
 }
@@ -125,12 +126,8 @@ animation: size;
     0%{
         top: 83%;
     }
-    30% {
-        top: 82%;
-    }
-
-    60% {
-        top: 84%;
+    50% {
+        top: 81%;
     }
     100% {
         top: 83%;
@@ -141,7 +138,16 @@ animation: size;
     transition: color ease 0.20s;
     opacity: 1;
 }
-
+.start-text {
+    color: white;
+    font-size: 0.40em;
+    letter-spacing: 3px;
+    animation: showText 5s ease 4.50s;
+}
+@keyframes showText {
+    from{opacity:0.1;}
+    to{opacity: 1;}
+}
 /* PROJECT STYLE */
 #services {
     height: auto;
@@ -562,8 +568,10 @@ animation: size;
     }
 .start-button {
     left: 40.50%;
-    font-size: 1.50em;;
+    font-size: 1.50em;
+    left: 37%;
 }
+
     h1 {
     font-size: 2.05em;
 }
@@ -625,7 +633,7 @@ h2, #div-title {
     padding-top: 8em;
     text-align: left;
     transition: ease 0.50s;
-    background-color: black;
+    background-color: #0c0c0c;
 }
 
 #main-content.active {
