@@ -595,7 +595,7 @@ h2, #div-title {
 .link-container hr {
     width: 25%;
 }
-	.link-container:hover hr{
+.link-container:hover hr{
    opacity: 1;
    animation: none;
 }
