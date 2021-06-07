@@ -595,6 +595,10 @@ h2, #div-title {
 .link-container hr {
     width: 25%;
 }
+	.link-container:hover hr{
+   opacity: 1;
+   animation: none;
+}
 #navBar.active {
     background-color: #000000c5;
     position: fixed;
