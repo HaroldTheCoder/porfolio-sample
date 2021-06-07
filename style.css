@@ -94,14 +94,14 @@ animation: size;
 /* WELCOME STYLE */
 #welcome-section {
     background: linear-gradient(
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.8)) , url(Images/1630410.jpg) center center no-repeat fixed;
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.6)) , url(Images/543756.jpg) center center no-repeat fixed;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    height: 100vh;
+    height: 87vh;
 }
 #welcome-section header  {
     color: rgb(255, 255, 255); 
@@ -523,7 +523,7 @@ animation: size;
     #welcome-section {
     background: linear-gradient(
         rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)) , url(Images/1630410.jpg) center center no-repeat;
+        rgba(0, 0, 0, 0.7)) , url(Images/543756.jpg) center center no-repeat;
     background-size: cover;
     width: 100%;
     height: 90vh;
