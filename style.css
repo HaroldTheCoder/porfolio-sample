@@ -547,6 +547,9 @@ h2, #div-title {
 .link-container:hover .mobile-link{
     font-weight: 600;
 }
+.link-container:nth-child(1) {
+    margin-top: 20%;
+}
 .link-container hr {
     width: 25%;
 }
