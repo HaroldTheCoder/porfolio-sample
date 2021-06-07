@@ -633,7 +633,7 @@ h2, #div-title {
     padding-top: 8em;
     text-align: left;
     transition: ease 0.50s;
-    background-color: #0c0c0c;
+    background-color: #000000d5;
 }
 
 #main-content.active {
