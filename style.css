@@ -566,6 +566,9 @@ animation: size;
     width: 100%;
     height: 95vh;
     }
+	 header p {
+        font-size: 0.85em;
+    }
 .start-button {
     left: 40.50%;
     font-size: 1.50em;
