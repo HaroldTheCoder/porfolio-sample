@@ -23,7 +23,6 @@ h2 {
 }
 /* MOBILE NAVBAR STYLE */
 .nav-title-mobile{display: none;} .mobile-navigation{display: none;}
-.open-close-buttons{display: none;}
 .mobile-menu{display: none;}
 /* NAVBAR STYLE */
 #navBar{
@@ -37,17 +36,17 @@ h2 {
 }
 #navBar.active {
     transition: background-color ease 0.80s;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.699);
     position: fixed;
     padding: 1em 1em 0.70em 1em;
     top: 0;
     z-index: 1000;
 }
 .nav-link.link-active {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .nav-link.link-active:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .nav-link {
     padding: 2em 1.50em 1.80em 1.50em;
@@ -91,24 +90,54 @@ animation: size;
    transition: opacity ease-in 0.20s;
 } 
 
+
 /* WELCOME STYLE */
 #welcome-section {
     background: linear-gradient(
-        rgba(0, 0, 0, 0.1),
-        rgba(0, 0, 0, 0.6)) , url(Images/543756.jpg) center center no-repeat fixed;
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.8)) , url(Images/1682023.jpg) center center no-repeat fixed;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    height: 87vh;
+    height: 100vh;
 }
 #welcome-section header  {
     color: rgb(255, 255, 255); 
     text-align: center;
     margin: auto;
 }
-
+.start-button .far {
+    color: rgb(255, 255, 255);
+    padding-right: 0.50em;
+}
+.start-button {
+    position: absolute;
+    top: 83%;
+    left: 46.50%;
+    font-size: 2em;;
+    animation: start 2s ease ;
+    border-bottom: 3px solid #fd0e3a;
+   
+}
+@keyframes start {
+    0%{
+        top: 83%;
+        opacity: 0.1;
+    }
+    50% {
+        top: 82%;
+    }
+    100% {
+        top: 83%;
+    }
+}
+.start-button:hover  .far{
+    color: #fd0e3ab2;
+    transition: color ease 0.20s;
+    opacity: 1;
+}
 
 /* PROJECT STYLE */
 #services {
@@ -141,11 +170,11 @@ animation: size;
     max-height: 40vh;
     margin: auto;
     text-align: left;
-    background-color: #26252e6c;
+    background-color: #2222226c;
     
 }
 .services-title {
-    border-bottom: 3px solid rgb(20, 21, 26);
+    border-bottom: 3px solid rgb(0, 0, 0);
     padding-bottom: 1em;
     padding-left: 2em;
 }
@@ -264,7 +293,7 @@ animation: size;
 .skill-container {
     display: grid;
     grid-template-areas: "circle-1 circle-2 circle-3";
-    background-color: #26252e6c;
+    background-color: #2222226c;
     margin-top: 5%;
     padding: 5em;
 }
@@ -522,13 +551,16 @@ animation: size;
 @media only screen and (min-width:390px) and (max-width: 844px) {
     #welcome-section {
     background: linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)) , url(Images/543756.jpg) center center no-repeat;
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.8)) , url(Images/1682023.jpg) center center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     }
-
+.start-button {
+    left: 40.50%;
+    font-size: 1.50em;;
+}
     h1 {
     font-size: 2.05em;
 }
@@ -603,6 +635,9 @@ h2, #div-title {
         margin: 6px 0;
         transition: 0.3s;
         border-radius: 1em;
+    }
+    .bar:nth-child(2) {
+        width: 1em;
     }
     .mobile-navigation.active {
         display: block;
