@@ -679,7 +679,7 @@ h2, #div-title {
         height: 0.12em;
         background-color: rgb(211, 211, 211);
         margin: 6px 0;
-        transition: 0.3s;
+        transition: 0.45s;
         border-radius: 1em;
     }
     .bar:nth-child(2) {
