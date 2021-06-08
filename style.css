@@ -679,7 +679,7 @@ h2, #div-title {
         height: 0.12em;
         background-color: rgb(211, 211, 211);
         margin: 6px 0;
-        transition: 0.45s;
+        transition: 0.37s;
         border-radius: 1em;
     }
     .bar:nth-child(2) {
@@ -704,7 +704,7 @@ h2, #div-title {
         opacity: 0;
     }
     .nav-button.active .bar:nth-child(3) {
-        transform: translateY(-9px) rotate(140deg);
+        transform: translateY(-8.80px) rotate(140deg);
     }
 	.desktop-nav {
 		display: none;
