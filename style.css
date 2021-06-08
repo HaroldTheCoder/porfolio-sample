@@ -585,12 +585,12 @@ animation: size;
     }
     .start-text.parallax-mobile {
         opacity: 0;
-        transition: all linear 0.20s;
+        transition: all linear 0s;
         animation: none;
     }
      .start-button.parallax-mobile {
         opacity: 0;
-        transition: all linear 0.20s;
+        transition: all linear 0s;
 	 animation: none;
     }
 .start-button {
