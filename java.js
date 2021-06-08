@@ -20,13 +20,7 @@ window.addEventListener('scroll', function() {
 	var header = document.querySelector('header');
 	var startButton = document.querySelector('.start-button');
 	var startText = document.querySelector('.start-text');
-	const distance = window.scrollY;
-
-	if(window.innerWidth < 400) {
-		document.querySelector("header").style.transform = `translateY(${
-		distance * 0.5
-	}px)`;
-	}
+	
 	header.classList.toggle('parallax-mobile', window.scrollY > 10);
 	startButton.classList.toggle('parallax-mobile', window.scrollY > 0);
 	startText.classList.toggle('parallax-mobile', window.scrollY > 0);
