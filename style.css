@@ -582,9 +582,6 @@ animation: size;
         opacity: 0;
         transition: all linear 0.50s;
     }
-    header p {
-        font-size: 0.85em;
-    }
 .start-button {
     left: 43.60%;
     font-size: 1.50em;
