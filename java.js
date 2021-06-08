@@ -24,7 +24,7 @@ window.addEventListener('scroll', function() {
 
 	if(window.innerWidth < 400) {
 		document.querySelector("header").style.transform = `translateY(${
-		distance * 1
+		distance * 0.5
 	}px)`;
 	}
 	header.classList.toggle('parallax-mobile', window.scrollY > 10);
