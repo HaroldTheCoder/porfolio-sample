@@ -95,8 +95,8 @@ function closeNav() {
 		menuBar.forEach((b) => b.classList.toggle('light-theme'));
 
         if(document.body.classList.contains("light-theme")) {
-            icon.src = "images/moon.png";
+            icon.src = "Images/moon.png";
         } else {
-                icon.src = "images/sun.png";
+                icon.src = "Images/sun.png";
         }
 	}
