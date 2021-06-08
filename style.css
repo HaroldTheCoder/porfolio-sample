@@ -90,7 +90,6 @@ animation: size;
    transition: opacity ease-in 0.20s;
 } 
 
-
 /* WELCOME STYLE */
 #welcome-section {
     background: linear-gradient(
@@ -110,16 +109,18 @@ animation: size;
 }
 .start-button .far {
     color: rgb(255, 255, 255);
-    padding: 0 0 0 0.70em ;
+    padding: 0;
 }
 .start-button {
     position: absolute;
     text-decoration: none;
+    text-align: center;
     top: 83%;
-    left: 46%;
+    left: 47%;
+    padding: 0.30em;
     font-size: 2em;;
-    animation: start 3s ease 0.90s;
-    border-bottom: 3px solid #fd0e3a;
+    animation: start 1.80s ease-in-out 0.90s;
+    
    
 }
 @keyframes start {
@@ -140,17 +141,23 @@ animation: size;
 }
 .start-text {
     color: white;
-    font-size: 0.40em;
+    position: absolute;
+    top: 89.50%;
+    left: 46%;
+    font-size: 0.60em;
+    padding-bottom: 0.50em;
     letter-spacing: 3px;
-    animation: showText 5s ease 4.50s;
+    border-bottom: 3px solid #fd0e3a;
+    animation: showText 6.50s ease ;
 }
 @keyframes showText {
-    from{opacity:0.1;}
+    from{opacity:0;}
     to{opacity: 1;}
 }
 /* PROJECT STYLE */
 #services {
     height: auto;
+    z-index: 1;
 }
 #div-title {
     font-size: 2.90em;
@@ -535,7 +542,7 @@ animation: size;
     border-radius: 50%;
     cursor: pointer;
     border: 3px solid #a5001e;
-    transition: border ease 0.45s, color ease 0.45s, opacity ease 0.80s;
+    transition: border ease 0.45s, color ease 0.45s, opacity ease 1.20s;
     opacity: 0;
 }
 .top-button:hover {
@@ -558,23 +565,33 @@ animation: size;
 }
 /* Iphone 12*/ 
 @media only screen and (min-width:390px) and (max-width: 844px) {
+
+
     #welcome-section {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.9)) , url(Images/1682023.jpg) center center no-repeat;
-    background-size: cover;
+    background-attachment: initial;
     width: 100%;
     height: 95vh;
+    top: 0;
+    left: 0;
     }
-	 header p {
+    header {
+        position: fixed;
+        
+    }
+    header.parallax-mobile {
+        opacity: 0;
+        transition: all linear 0.50s;
+    }
+    header p {
         font-size: 0.85em;
     }
 .start-button {
-    left: 40.50%;
+    left: 43.60%;
     font-size: 1.50em;
-    left: 37%;
 }
-
+.start-text{
+    left: 39%;
+}
     h1 {
     font-size: 2.05em;
 }

@@ -52,4 +52,8 @@ function closeNav() {
 	home.classList.remove("active");
 }
 
-
+//Parallax Effect 
+window.addEventListener('scroll', function() {
+	var header = document.querySelector('header');
+	header.classList.toggle('parallax-mobile', window.scrollY > 5);
+})
