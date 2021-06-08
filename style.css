@@ -591,6 +591,7 @@ animation: size;
      .start-button.parallax-mobile {
         opacity: 0;
         transition: all linear 0.50s;
+	 animation: none;
     }
 .start-button {
     left: 43.60%;
