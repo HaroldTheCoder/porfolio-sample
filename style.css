@@ -184,12 +184,11 @@ animation: size;
     max-height: 40vh;
     margin: auto;
     text-align: left;
-    background-color: #2222226c;
+    background-color: #0000006c;
+    border: 2px solid  #2222226c;
     
 }
 .services-title {
-    border-bottom: 3px solid rgb(0, 0, 0);
-    padding-bottom: 1em;
     padding-left: 2em;
 }
 .fa-laptop-code, .fa-code,
@@ -201,6 +200,7 @@ animation: size;
 .service-box > p {
     color: rgb(185, 185, 185);
     padding: 2em;
+    background-color: black;
 }
 /* PROJECTS STYLE */
 #projects {
@@ -562,7 +562,7 @@ animation: size;
     width: 4%;
 }
 /* Iphone 12*/ 
-@media only screen and (min-width:390px) and (max-width: 844px) {
+@media only screen and (min-width:375px) and (max-width: 844px) {
 
 
     #welcome-section {
@@ -679,7 +679,7 @@ h2, #div-title {
         height: 0.12em;
         background-color: rgb(211, 211, 211);
         margin: 6px 0;
-        transition: 0.37s;
+        transition: 0.45s;
         border-radius: 1em;
     }
     .bar:nth-child(2) {
@@ -704,7 +704,7 @@ h2, #div-title {
         opacity: 0;
     }
     .nav-button.active .bar:nth-child(3) {
-        transform: translateY(-8.90px) rotate(140deg);
+        transform: translateY(-9px) rotate(140deg);
     }
 	.desktop-nav {
 		display: none;
@@ -751,9 +751,11 @@ h2, #div-title {
 .service-box {
     height: fit-content;
     max-height: fit-content;
-    margin: 10% auto;
-    text-align: left; 
+    margin: 10% auto; 
 
+}
+.service-box P {
+    text-align: center;
 }
 #projects {
     text-align: center;
