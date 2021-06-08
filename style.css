@@ -575,8 +575,10 @@ animation: size;
     left: 0;
     }
     header {
-        position: fixed;
-        
+        position: fixed;  
+    }
+	header p {
+        font-size: 0.80em;
     }
     header.parallax-mobile {
         opacity: 0;
