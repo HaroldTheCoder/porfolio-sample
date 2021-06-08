@@ -682,13 +682,20 @@ h2 {
 }
 /* Iphone 12*/
 @media only screen and (min-width: 375px) and (max-width: 844px) {
-	#welcome-section {
+	#welcome-section.light-theme {
+		background-attachment: initial;
+    }
+    #welcome-section {
 		background-attachment: initial;
 		width: 100%;
 		height: 95vh;
 		top: 0;
 		left: 0;
 	}
+    #icon {
+        top: 2%;
+        width: 5%;
+    }
 	header {
 		position: fixed;
 	}
