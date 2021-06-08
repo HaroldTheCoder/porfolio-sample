@@ -14,6 +14,24 @@ window.addEventListener("scroll", function () {
 	topButton.classList.toggle("button-active", window.scrollY > 4200);
 
 });
+
+//Header Parallax Effect 
+window.addEventListener('scroll', function() {
+	var header = document.querySelector('header');
+	var startButton = document.querySelector('.start-button');
+	var startText = document.querySelector('.start-text');
+	const distance = window.scrollY;
+
+	if(window.innerWidth < 400) {
+		document.querySelector("header").style.transform = `translateY(${
+		distance * 1
+	}px)`;
+	}
+	header.classList.toggle('parallax-mobile', window.scrollY > 10);
+	startButton.classList.toggle('parallax-mobile', window.scrollY > 0);
+	startText.classList.toggle('parallax-mobile', window.scrollY > 0);
+})
+
 // Skill-Div Parallax function
 window.addEventListener("scroll", function () {
 	var diV = document.querySelector("#skill-section");
@@ -24,6 +42,7 @@ window.addEventListener("scroll", function () {
 	full.forEach((n) => n.classList.toggle("range-active", window.scrollY > 2650)
 	);
 });
+
 // Skill-Div Parallax Mobile function 
 window.addEventListener("scroll", function () {
 	var diV = document.querySelector("#skill-section");
@@ -34,6 +53,7 @@ window.addEventListener("scroll", function () {
 	full.forEach((n) => n.classList.toggle("range-active-mobile", window.scrollY > 10000)
 	);
 });
+
 // Hamburger function
 const hamburger = document.querySelector(".nav-button");
 const navMenu = document.querySelector(".mobile-navigation");
@@ -52,8 +72,3 @@ function closeNav() {
 	home.classList.remove("active");
 }
 
-//Parallax Effect 
-window.addEventListener('scroll', function() {
-	var header = document.querySelector('header');
-	header.classList.toggle('parallax-mobile', window.scrollY > 5);
-})

@@ -120,8 +120,6 @@ animation: size;
     padding: 0.30em;
     font-size: 2em;;
     animation: start 1.80s ease-in-out 0.90s;
-    
-   
 }
 @keyframes start {
     0%{
@@ -575,22 +573,34 @@ animation: size;
     left: 0;
     }
     header {
-        position: fixed;  
+        position: fixed;
+        
     }
-	header p {
+    header p {
         font-size: 0.80em;
     }
     header.parallax-mobile {
         opacity: 0;
         transition: all linear 0.50s;
     }
+    .start-text.parallax-mobile {
+        opacity: 0;
+        transition: all linear 0.50s;
+        animation: none;
+    }
+     .start-button.parallax-mobile {
+        opacity: 0;
+        transition: all linear 0.50s;
+    }
 .start-button {
     left: 43.60%;
     font-size: 1.50em;
+    position: fixed;
 }
 .start-text{
-    left: 41%;
+    left: 41.50%;
     font-size: 0.40em;
+    position: fixed;
 }
     h1 {
     font-size: 2.05em;
