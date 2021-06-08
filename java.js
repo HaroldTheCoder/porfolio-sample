@@ -20,10 +20,9 @@ window.addEventListener('scroll', function() {
 	var header = document.querySelector('header');
 	var startButton = document.querySelector('.start-button');
 	var startText = document.querySelector('.start-text');
-	
-	header.classList.toggle('parallax-mobile', window.scrollY > 10);
-	startButton.classList.toggle('parallax-mobile', window.scrollY > 0);
-	startText.classList.toggle('parallax-mobile', window.scrollY > 0);
+	header.classList.toggle("parallax-mobile", window.scrollY > 0);
+	startButton.classList.toggle("parallax-mobile", window.scrollY > 0);
+	startText.classList.toggle("parallax-mobile", window.scrollY > 0);
 })
 
 // Skill-Div Parallax function
@@ -66,3 +65,38 @@ function closeNav() {
 	home.classList.remove("active");
 }
 
+  var icon = document.getElementById("icon");
+  
+
+	icon.onclick = function() {
+		var header = document.querySelector("#welcome-section");
+		var navLink = document.querySelectorAll('.nav-link');
+		var startText = document.querySelector('.start-text');
+		var serviceBox = document.querySelectorAll('.service-box');
+		var skillSection = document.querySelector('.skill-container');
+		var insideCircle = document.querySelectorAll('.inside-circle');
+		var socialIcon = document.querySelectorAll('.fa');
+		var contactInfo = document.querySelector('.contact-info');
+		var topButton = document.querySelector('.top-button');
+		var footer = document.querySelector('#main-footer');
+		var menuBar = document.querySelectorAll('.bar');
+
+         document.body.classList.toggle("light-theme");
+		 header.classList.toggle("light-theme");
+		 startText.classList.toggle("light-theme");
+		 navLink.forEach((n) => n.classList.toggle("light-theme"));
+		 serviceBox.forEach((s) => s.classList.toggle("light-theme"));
+		 skillSection.classList.toggle("light-theme");
+		 insideCircle.forEach((c) => c.classList.toggle("light-theme"));
+		 socialIcon.forEach((m) => m.classList.toggle("light-theme"));
+		 contactInfo.classList.toggle('light-theme');
+		 topButton.classList.toggle('light-theme');
+		 footer.classList.toggle("light-theme");
+		menuBar.forEach((b) => b.classList.toggle('light-theme'));
+
+        if(document.body.classList.contains("light-theme")) {
+            icon.src = "images/moon.png";
+        } else {
+                icon.src = "images/sun.png";
+        }
+	}
