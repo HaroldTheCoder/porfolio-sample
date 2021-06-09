@@ -902,6 +902,7 @@ h2 {
 		height: fit-content;
 		max-height: fit-content;
 		margin: 10% auto;
+		border: 3px solid #2222226c;
 	}
 	.service-box P {
 		text-align: center;
@@ -1340,6 +1341,7 @@ h2 {
 		height: fit-content;
 		max-height: fit-content;
 		margin: 10% auto;
+		border: 3px solid #2222226c;
 	}
 	.service-box P {
 		text-align: center;
@@ -1774,6 +1776,7 @@ h2 {
 		height: fit-content;
 		max-height: fit-content;
 		margin: 10% auto;
+		border: 3px solid #2222226c;
 	}
 	.service-box P {
 		text-align: center;
