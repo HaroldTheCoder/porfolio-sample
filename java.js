@@ -17,7 +17,7 @@ window.addEventListener("scroll", function () {
 
 //Header Parallax Effect 
 window.addEventListener('scroll', function() {
-	var header = document.querySelector('header');
+	var header = document.querySelector('.header-title');
 	var startButton = document.querySelector('.start-button');
 	var startText = document.querySelector('.start-text');
 	header.classList.toggle("parallax-mobile", window.scrollY > 0);
@@ -65,9 +65,9 @@ function closeNav() {
 	home.classList.remove("active");
 }
 
+// Dark - Light Mode Theme Function
   var icon = document.getElementById("icon");
   
-
 	icon.onclick = function() {
 		var header = document.querySelector("#welcome-section");
 		var navLink = document.querySelectorAll('.nav-link');
@@ -77,6 +77,7 @@ function closeNav() {
 		var insideCircle = document.querySelectorAll('.inside-circle');
 		var socialIcon = document.querySelectorAll('.fa');
 		var contactInfo = document.querySelector('.contact-info');
+		var emailLink = document.querySelector('.email-link');
 		var topButton = document.querySelector('.top-button');
 		var footer = document.querySelector('#main-footer');
 		var menuBar = document.querySelectorAll('.bar');
@@ -90,13 +91,14 @@ function closeNav() {
 		 insideCircle.forEach((c) => c.classList.toggle("light-theme"));
 		 socialIcon.forEach((m) => m.classList.toggle("light-theme"));
 		 contactInfo.classList.toggle('light-theme');
+		 emailLink.classList.toggle('light-theme');
 		 topButton.classList.toggle('light-theme');
 		 footer.classList.toggle("light-theme");
 		menuBar.forEach((b) => b.classList.toggle('light-theme'));
 
         if(document.body.classList.contains("light-theme")) {
-            icon.src = "Images/moon.png";
+            icon.src = "images/moon.png";
         } else {
-                icon.src = "Images/sun.png";
+                icon.src = "images/sun.png";
         }
 	}
