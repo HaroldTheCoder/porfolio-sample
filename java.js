@@ -29,8 +29,8 @@ window.addEventListener('scroll', function() {
 window.addEventListener("scroll", function () {
 	var range = document.querySelectorAll(".fill");
 	var full = document.querySelectorAll(".full");
-	range.forEach((m) => m.classList.toggle("skill-active", window.scrollY > 3000));
-	full.forEach((n) => n.classList.toggle("range-active", window.scrollY > 3000)
+	range.forEach((m) => m.classList.toggle("skill-active", window.scrollY > 2850));
+	full.forEach((n) => n.classList.toggle("range-active", window.scrollY > 2850)
 	);
 });
 
@@ -77,6 +77,7 @@ function closeNav() {
 		var topButton = document.querySelector('.top-button');
 		var footer = document.querySelector('#main-footer');
 		var menuBar = document.querySelectorAll('.bar');
+		var githubIcon = document.querySelector('.fa-github');
 
          document.body.classList.toggle("light-theme");
 		 header.classList.toggle("light-theme");
@@ -86,6 +87,7 @@ function closeNav() {
 		 skillSection.classList.toggle("light-theme");
 		 insideCircle.forEach((c) => c.classList.toggle("light-theme"));
 		 socialIcon.forEach((m) => m.classList.toggle("light-theme"));
+		 githubIcon.classList.toggle("light-theme");
 		 contactInfo.classList.toggle('light-theme');
 		 emailLink.classList.toggle('light-theme');
 		 topButton.classList.toggle('light-theme');

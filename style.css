@@ -25,6 +25,7 @@
         transform: translateY(0);
     } 
 }
+
 /* LIGHT THEME STYLE */
 body.light-theme {
 	background-color: #ffffff;
@@ -56,8 +57,7 @@ body.light-theme {
 .skill-container.light-theme {
 	background-color: #ffffff;
 	color: rgb(0, 0, 0);
-	border-top: 5px solid rgb(233, 233, 233);
-	border-bottom: 5px solid rgb(233, 233, 233);
+	
 }
 .circle-wrap .inside-circle.light-theme {
 	background: #ffffff;
@@ -68,6 +68,16 @@ body.light-theme {
     box-shadow: 3px 5px 5px rgb(230, 230, 230);
 }
 .fa.light-theme:hover {
+	color: rgb(0, 0, 0);
+    box-shadow: none;
+	box-shadow: 0px 0px 7px #fd0e3a;
+}
+.fa-github.light-theme {
+	color: rgb(71, 71, 71);
+	border: 2px solid #fafafa;
+    box-shadow: 3px 5px 5px rgb(230, 230, 230);
+}
+.fa-github.light-theme:hover {
 	color: rgb(0, 0, 0);
     box-shadow: none;
 	box-shadow: 0px 0px 7px #fd0e3a;
@@ -371,7 +381,6 @@ h2 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-left: 2.5em;
 	margin: auto;
 	height: 100%;
 	letter-spacing: 3px;
@@ -428,16 +437,15 @@ h2 {
 	padding-top: 1em;
 }
 
-.circle-lable.fab {
-	font-size: 1.5em;
+.fa-html5, .fa-css3, .fa-js-square {
+	font-size: 3em;
 	padding: 0.1em;
 }
 .skill-container {
 	display: grid;
 	grid-template-areas: "circle-1 circle-2 circle-3";
-	background-color: #2222226c;
 	margin-top: 5%;
-	padding: 5em;
+	padding: 0em;
 }
 .circle-1 {
 	grid-area: circle-1;
@@ -460,7 +468,7 @@ h2 {
 .circle-wrap {
 	float: left;
 	position: relative;
-	margin: 20% auto;
+	margin: 10% auto 10% auto;
 	width: 150px;
 	height: 150px;
 	background: #2c2c2c;
@@ -573,7 +581,7 @@ h2 {
 	margin: auto;
 	opacity: 0.9;
 }
-.fa {
+.fa, .fa-github {
 	font-size: 1em;
 	padding: 0.5em;
 	margin: 0 1% 0 1%;
@@ -583,6 +591,12 @@ h2 {
 	border-radius: 50%;
 }
 .fa:hover {
+	color: rgb(255, 255, 255);
+	border: 2px solid #fd0e3a;
+	box-shadow: 0px 0px 7px #fd0e3a;
+	border-radius: 50%;
+}
+.fa-github:hover {
 	color: rgb(255, 255, 255);
 	border: 2px solid #fd0e3a;
 	box-shadow: 0px 0px 7px #fd0e3a;
@@ -1696,7 +1710,7 @@ h2 {
 		padding-top: 8em;
 		text-align: left;
 		transition: ease 0.5s;
-		background-color: #000000e0;
+		background-color: #000000;
 	}
 
 	#main-content.active {
@@ -1838,7 +1852,7 @@ h2 {
 		cursor: pointer;
 	}
 	#skill-section {
-		margin: 25% auto 10% auto;
+		margin: 15% auto 10% auto;
 	}
 	.skill-container {
 		display: grid;
@@ -1849,26 +1863,13 @@ h2 {
 		margin-top: 5%;
 		padding: 5em;
 	}
-	#skill-section.div-active-mobile {
-		transition: animation ease-in-out 0.7s;
-		animation: parallax ease;
-		animation-duration: 1.7s;
-		animation-fill-mode: forwards;
-	}
-	@keyframes parallax {
-		from {
-			margin-top: -12%;
-			opacity: 0;
-		}
-		top {
-			margin-top: 8%;
-			opacity: 1;
-		}
-	}
+	.circle-wrap {
+	margin: 30% auto;
+}
+
 	.circle-wrap .circle .mask.full.range-active-mobile,
 	.circle-wrap .circle .fill-1.skill-active-mobile {
 		animation: fill-1 ease-in-out 3s;
-
 		transform: rotate(181deg);
 	}
 
