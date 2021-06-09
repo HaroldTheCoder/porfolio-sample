@@ -993,6 +993,9 @@ h2 {
 		margin-top: 5%;
 		padding: 5em;
 	}
+	.circle-wrap {
+	margin: 30% auto;
+}
 	#skill-section.div-active-mobile {
 		transition: animation ease-in-out 0.7s;
 		animation: parallax ease;
@@ -1428,6 +1431,9 @@ h2 {
 		margin-top: 5%;
 		padding: 5em;
 	}
+	.circle-wrap {
+	margin: 30% auto;
+}
 	#skill-section.div-active-mobile {
 		transition: animation ease-in-out 0.7s;
 		animation: parallax ease;
