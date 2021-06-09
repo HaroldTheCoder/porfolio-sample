@@ -29,8 +29,8 @@ window.addEventListener('scroll', function() {
 window.addEventListener("scroll", function () {
 	var range = document.querySelectorAll(".fill");
 	var full = document.querySelectorAll(".full");
-	range.forEach((m) => m.classList.toggle("skill-active", window.scrollY > 3850));
-	full.forEach((n) => n.classList.toggle("range-active", window.scrollY > 3850)
+	range.forEach((m) => m.classList.toggle("skill-active", window.scrollY > 3350));
+	full.forEach((n) => n.classList.toggle("range-active", window.scrollY > 3350)
 	);
 });
 
