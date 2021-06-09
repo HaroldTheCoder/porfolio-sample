@@ -27,21 +27,17 @@ window.addEventListener('scroll', function() {
 
 // Skill-Div Parallax function
 window.addEventListener("scroll", function () {
-	var diV = document.querySelector("#skill-section");
 	var range = document.querySelectorAll(".fill");
 	var full = document.querySelectorAll(".full");
-	diV.classList.toggle("div-active", window.scrollY > 2300);
-	range.forEach((m) => m.classList.toggle("skill-active", window.scrollY > 2650));
-	full.forEach((n) => n.classList.toggle("range-active", window.scrollY > 2650)
+	range.forEach((m) => m.classList.toggle("skill-active", window.scrollY > 3850));
+	full.forEach((n) => n.classList.toggle("range-active", window.scrollY > 3850)
 	);
 });
 
 // Skill-Div Parallax Mobile function 
 window.addEventListener("scroll", function () {
-	var diV = document.querySelector("#skill-section");
 	var range = document.querySelectorAll(".fill");
 	var full = document.querySelectorAll(".full");
-	diV.classList.toggle("div-active-mobile", window.scrollY > 15000);
 	range.forEach((m) => m.classList.toggle("skill-active-mobile", window.scrollY > 10000));
 	full.forEach((n) => n.classList.toggle("range-active-mobile", window.scrollY > 10000)
 	);

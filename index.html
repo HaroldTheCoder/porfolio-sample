@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link href='https://css.gg/arrow-long-down-e.css' rel='stylesheet'>
+        <script src="float-panel.js"></script>
     </head>
     <body>
         <nav id="navBar">
@@ -19,7 +20,7 @@
                     <div class="desktop-nav">
                         <div class="link-container"><a href="#services" class="nav-link">Services</a><hr></div>
                 <div class="link-container"><a href="#projects" class="nav-link">My Work</a><hr></div>
-                <div class="link-container"><a href="#about" class="nav-link">About</a><hr></div>
+                <div class="link-container"><a href="#skill-section" class="nav-link">About</a><hr></div>
                 <div class="link-container"><a href="#contact" class="nav-link">Contact</a><hr></div>
                     </div>
 
@@ -33,7 +34,7 @@
                 <div class="mobile-navigation">
                     <div class="link-container"><a href="#services" class="mobile-link">Services</a><hr></div>
                     <div class="link-container"><a href="#projects" class="mobile-link">My Work</a><hr></div>
-                    <div class="link-container"><a href="#about" class="mobile-link">About</a><hr></div>
+                    <div class="link-container"><a href="#skill-section" class="mobile-link">About</a><hr></div>
                     <div class="link-container"><a href="#contact" class="mobile-link">Contact</a><hr></div>
                 </div>
             </div>
@@ -56,17 +57,17 @@
          <section id="services">
                <h2 id="div-title">SERVICES </h2>
 
-               <div class="services-tile box-1">
+               <div class="services-tile box-1 slideanim" >
                       <div class="service-box"><i class="fas fa-code"></i><h3 class="services-title">HTML / CSS </h3>
                             <p>Having a strong foundation for a website means getting the HTML and CSS architecture right. If you've got a design, I can create the front-end code for it.</p>
                         </div>
-                      <div class="service-box box2"><i class="fas fa-laptop-code"></i><h3 class="services-title">Web design </h3>
+                      <div class="service-box box2 slideanim"><i class="fas fa-laptop-code"></i><h3 class="services-title">Web design </h3>
                             <p>With a very detailed work from start to end I design and develop custom websites, mobile/desktop fully responsive. An experience that make people's lives simple.</p>
                         </div>
-                      <div class="service-box box-3"><i class="fab fa-shopify"></i><h3 class="services-title">eCommerce </h3>
+                      <div class="service-box box-3 slideanim"><i class="fab fa-shopify"></i><h3 class="services-title">eCommerce </h3>
                             <p>Creating a good online store can be a challenge. I've learned the best ways to design stores that sell products and provide real value to customers.</p>
                         </div>  
-                      <div class="service-box box-4"><i class="fas fa-fire"></i><h3 class="services-title">Performance </h3>
+                      <div class="service-box box-4 slideanim"><i class="fas fa-fire"></i><h3 class="services-title">Performance </h3>
                             <p>Having a fast website is key to keeping people around which ultimately converts them into customers. I implement these techniques into every site I code. High performance and client satisfaction is my main goal.</p>
                         </div>
                  </div>       
@@ -75,22 +76,22 @@
 <section id="projects">
                 <h2 >MY WORK</h2>
                 <div class="projects-container">
-                    <div class="project-box tile1 lazy" onmouseover="labelShow2();" onmouseout="labelHide2();">
+                    <div class="project-box tile1 lazy slideanim" onmouseover="labelShow2();" onmouseout="labelHide2();">
                         <p class="project-label label1">Project 1 <i class="far fa-folder-open"></i></p>
                     </div>
-                    <div class="project-box tile2 lazy" onmouseover="labelShow2();" onmouseout="labelHide2();">
+                    <div class="project-box tile2 lazy slideanim" onmouseover="labelShow2();" onmouseout="labelHide2();">
                         <span class="project-label label2"> Project 2 <i class="far fa-folder-open"></i></span>
                     </div>
-                    <div class="project-box tile3 lazy" onmouseover="labelShow3();" onmouseout="labelHide3();">
+                    <div class="project-box tile3 lazy slideanim" onmouseover="labelShow3();" onmouseout="labelHide3();">
                         <span class="project-label label3">Project 3 <i class="far fa-folder-open"></i></span>
                     </div>
-                    <div class="project-box tile4 lazy" onmouseover="labelShow4();" onmouseout="labelHide4();">
+                    <div class="project-box tile4 lazy slideanim" onmouseover="labelShow4();" onmouseout="labelHide4();">
                         <span class="project-label label4">Project 4 <i class="far fa-folder-open"></i></span>
                     </div>
-                    <div class="project-box tile5 lazy" onmouseover="labelShow5();" onmouseout="labelHide5();">
+                    <div class="project-box tile5 lazy slideanim" onmouseover="labelShow5();" onmouseout="labelHide5();">
                         <span class="project-label label5">Project 5 <i class="far fa-folder-open"></i></span>
                     </div>
-                    <div class="project-box tile6 lazy" onmouseover="labelShow6();" onmouseout="labelHide6();">
+                    <div class="project-box tile6 lazy slideanim" onmouseover="labelShow6();" onmouseout="labelHide6();">
                         <span class="project-label label6">Project 6 <i class="far fa-folder-open"></i></span>
                     </div>
                 </div>
@@ -98,7 +99,7 @@
                 <hr class="projects-hr">
             </section>
 
-            <section id="skill-section">
+            <section id="skill-section" class="slideanim" >
             <h2>MY SKILLS</h2>
             <div class="skill-container">
             <div class="circle-wrap circle-1">
@@ -141,7 +142,7 @@
             </div>
             </div>
             </section>
-        <section id="about">
+        <section id="about" class="slideanim">
             <h2>ABOUT ME</h2>
             <div class="about-paragraph">
             <p>I am a freelance certified web developer specialized in Front-End development located in Fairfax, Virginia. I build aesthetically pleasing and rendering web sites. I always make sure to follow the best practices and accessibilty standards according to <strong title="World Wide Web Consortium">W3C</strong>. My main goal is to bring the best visual design with great interaction for your site.</p>

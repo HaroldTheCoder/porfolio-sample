@@ -1,7 +1,30 @@
 * {
 	box-sizing: border-box;
 }
-
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
 /* LIGHT THEME STYLE */
 body.light-theme {
 	background-color: #ffffff;
@@ -402,6 +425,7 @@ h2 {
 /* SKILL STYLE*/
 #skill-section {
 	width: 100%;
+	padding-top: 1em;
 }
 #skill-section.div-active {
 	transition: animation ease-in-out 0.7s;
@@ -537,7 +561,7 @@ h2 {
 #about {
 	margin: 5% auto auto auto;
 	padding: 1.5em;
-	height: 70vh;
+	height: 50vh;
 }
 .about-paragraph {
 	width: 50%;
@@ -1560,7 +1584,7 @@ h2 {
 		right: 2%;
 		bottom: 1.5vh;
 		padding: 0.7em;
-		width: 18.10%;
+		width: 17.5%;
 	}
 	.top-button.button-active-mobile {
 		opacity: 1;
@@ -1991,7 +2015,7 @@ h2 {
 		right: 2%;
 		bottom: 1.5vh;
 		padding: 0.7em;
-		width: 18%;
+		width: 17.5%;
 	}
 	.top-button.button-active-mobile {
 		opacity: 1;
