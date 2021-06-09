@@ -23,7 +23,8 @@ body.light-theme {
 }
 .start-text.light-theme {
 	color: rgb(22, 22, 22);
-	font-weight: 600;
+    font-weight: 600;
+    left: 38.50%;
 }
 .service-box.light-theme {
 	background-color: rgb(255, 255, 255);
@@ -766,7 +767,7 @@ h2 {
 		animation: none;
 	}
 	#navBar.active {
-		background-color: #000000c5;
+		background-color: #000000cb;
 		position: fixed;
 		padding: 1em 1em 2em 1em;
 	}
@@ -808,7 +809,7 @@ h2 {
 		padding-top: 8em;
 		text-align: left;
 		transition: ease 0.5s;
-		background-color: #000000d8;
+		background-color: #000000e0;
 	}
 
 	#main-content.active {
