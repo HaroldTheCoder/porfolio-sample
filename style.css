@@ -3,14 +3,13 @@
 }
 .slideanim {
     visibility:hidden;
-    visibility:visible\9;/*For old IE browsers IE6-8 */
+    visibility:visible\9;
 }
 .slideanim.slide {                  
     visibility: visible;                  
     animation: slide 1s;
 }
 .slideanim::after {
-    /* useful when its child elements are float:left; */
     content: "";
     display: table;
     clear: both;
@@ -1601,6 +1600,9 @@ h2 {
 	#welcome-section.light-theme {
 		background-attachment: initial;
     }
+	.start-text.light-theme {
+	left: 45.40%;
+}
     #welcome-section {
 		background-attachment: initial;
 		width: 100%;
