@@ -427,22 +427,7 @@ h2 {
 	width: 100%;
 	padding-top: 1em;
 }
-#skill-section.div-active {
-	transition: animation ease-in-out 0.7s;
-	animation: parallax ease;
-	animation-duration: 1.55s;
-	animation-fill-mode: forwards;
-}
-@keyframes parallax {
-	from {
-		margin-top: -11%;
-		opacity: 0;
-	}
-	top {
-		margin-top: 8%;
-		opacity: 1;
-	}
-}
+
 .circle-lable.fab {
 	font-size: 1.5em;
 	padding: 0.1em;
