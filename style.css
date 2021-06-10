@@ -920,6 +920,11 @@ h2 {
 		margin: 5% auto auto auto;
 		display: block;
 	}
+	.service-box.light-theme {
+	background-color: rgb(255, 255, 255);
+	border: none;
+	color: rgb(0, 0, 0);
+}
 	.service-box {
 		height: fit-content;
 		max-height: fit-content;
@@ -1362,6 +1367,11 @@ h2 {
 		margin: 5% auto auto auto;
 		display: block;
 	}
+	.service-box.light-theme {
+	background-color: rgb(255, 255, 255);
+	border: none;
+	color: rgb(0, 0, 0);
+}
 	.service-box {
 		height: fit-content;
 		max-height: fit-content;
@@ -1803,6 +1813,11 @@ h2 {
 		margin: 5% auto auto auto;
 		display: block;
 	}
+	.service-box.light-theme {
+	background-color: rgb(255, 255, 255);
+	border: none;
+	color: rgb(0, 0, 0);
+}
 	.service-box {
 		height: fit-content;
 		max-height: fit-content;
